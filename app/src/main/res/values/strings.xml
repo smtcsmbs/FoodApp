@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error">Uyarı</string>
+    <string name="alert_message">Yanlış giriş.Mail ve şifrenizi kontrol ediniz.</string>
+    <string name="alert_message_null">Boşlukları doldur.</string>
+    <string name="close">Kapat</string>
+    <string name="alert_message_same_accomt">Bu adres zaten kullanılıyor..</string>
+    <string name="alert_message_password_char">Şifre 6 basamaktan küçük olamaz.</string>
+    <string name="alert_message_email_badly_format">Mail adresin doğruluğundan emin olun.</string>
+    <string name="search">Yemek Ara</string>
+    <string name="foodimage">foodImage</string>
+    <string name="details">Detaylar</string>
+    <string name="price_one">1</string>
+    <string name="add_cart">Sepete Ekle</string>
+    <string name="seach_food">Aramaya başla.</string>
+    <string name="tocart">ToCart</string>
+
+    <string name="name_lastname">isim</string>
+    <string name="email">mail</string>
+    <string name="default_password">şifre</string>
+
+    <string name="myCart">Sepetim</string>
+    <string name="total">Toplam</string>
+    <string name="deleteicon">deleteIcon</string>
+    <string name="orderimage">orderImage</string>
+
+</resources>

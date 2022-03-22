@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.foodapp.fragment.LoginFragment"
+        android:label="MembershipFragment"
+        tools:layout="@layout/fragment_login"
+
+        >
+        <action
+            android:id="@+id/toHomePage"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.foodapp.fragment.HomeFragment"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/toDetails"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/toCart"
+            app:destination="@id/cartFragment" />
+        <argument
+            android:name="pay"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.foodapp.fragment.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        android:label="FoodDetailPageFragment" >
+        <argument
+            android:name="food"
+            app:argType="com.example.foodapp.entity.Food" />
+    </fragment>
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.foodapp.fragment.CartFragment"
+        android:label="MyOrderPageFragment"
+        tools:layout="@layout/fragment_cart"
+        >
+        <action
+            android:id="@+id/cartToHome"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
